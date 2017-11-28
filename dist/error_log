@@ -1,0 +1,8 @@
+[31-Jul-2017 05:05:24 America/Chicago] PHP Fatal error:  Uncaught exception 'Slim\Exception\InvalidMethodException' with message 'Unsupported HTTP method "TRACK" provided' in /home/circle5darkroast/public_html/vendor/slim/slim/Slim/Http/Request.php:353
+Stack trace:
+#0 /home/circle5darkroast/public_html/vendor/slim/slim/Slim/Http/Request.php(183): Slim\Http\Request->filterMethod('TRACK')
+#1 /home/circle5darkroast/public_html/vendor/slim/slim/Slim/Http/Request.php(148): Slim\Http\Request->__construct('TRACK', Object(Slim\Http\Uri), Object(Slim\Http\Headers), Array, Array, Object(Slim\Http\RequestBody), Array)
+#2 /home/circle5darkroast/public_html/vendor/slim/slim/Slim/DefaultServicesProvider.php(60): Slim\Http\Request::createFromEnvironment(Object(Slim\Http\Environment))
+#3 /home/circle5darkroast/public_html/vendor/pimple/pimple/src/Pimple/Container.php(113): Slim\DefaultServicesProvider->Slim\{closure}(Object(Slim\Container))
+#4 /home/circle5darkroast/public_html/bootstrap/app.php(24): Pimple\Container->offsetGet('request')
+#5 /home/circle5darkroast/public_html/vend in /home/circle5darkroast/public_html/vendor/slim/slim/Slim/Http/Request.php on line 353

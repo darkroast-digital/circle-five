@@ -1,0 +1,12 @@
+///* ========================================================================
+//   #BOX
+//   ======================================================================== */
+
+.box {
+    @include grid();
+    background: $c-white;
+    padding: 1rem;
+    border: solid 1px $c-grey-lighter;
+    @include shadow(normal);
+    @include radius(medium);
+}

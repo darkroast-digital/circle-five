@@ -1,0 +1,83 @@
+///* ========================================================================
+//   #FIELDS
+//   ======================================================================== */
+
+.field {
+    margin-bottom: 1rem;
+    position: relative;
+
+    textarea {
+        min-height: 150px;
+    }
+
+    &__input {
+        padding: .4rem;
+        width: 100%;
+        border-color: $c-grey;
+        color: $c-grey-dark;
+        @include radius(small);
+
+        &:hover {
+            border-color: $c-grey-dark;
+        }
+
+        &:focus {
+            border-color: $c-primary;
+        }
+
+        &::placeholder {
+            opacity: 1;
+            color: $c-grey;
+        }
+
+        &--success {
+            border-color: $c-success;
+
+            &:hover {
+                border-color: $c-success-dark;
+            }
+
+            &:focus {
+                border-color: $c-primary;
+            }
+        }
+
+        &--error {
+            border-color: $c-error;
+
+            &:hover {
+                border-color: $c-error-dark;
+            }
+
+            &:focus {
+                border-color: $c-primary;
+            }
+        }
+    }
+
+    &.field__icon {
+
+        &:before {
+            content: 'person';
+            position: absolute;
+            top: 50%;
+            right: .5rem;
+            transform: translateY(-50%);
+            color: $c-grey;
+            @extend %u-material__icons;
+        }
+    }
+
+    &.field__required {
+
+        &:after {
+            content: '*';
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            color: $c-error;
+            font-weight: bold;
+        }
+    }
+}

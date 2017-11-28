@@ -1,0 +1,45 @@
+///* ========================================================================
+//   #GLOBAL FONTS
+//   ======================================================================== */
+
+// Globably Scoped Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+// Declare Font Variables
+
+$g-font-one: 'Source Sans Pro';
+$g-font-two: 'Source Sans Pro';
+$g-font-mono: 'Roboto Mono';
+
+// Apply Fonts To Elements
+
+html {
+	font-family: $g-font-two;
+	color: $c-font;
+}
+
+body {
+	font-family: $g-font-two;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $g-font-one;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: $g-font-mono;
+}
+
+a {
+	font-family: $g-font-one;
+}

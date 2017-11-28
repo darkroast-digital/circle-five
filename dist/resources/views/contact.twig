@@ -1,0 +1,93 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Where We Are{% endblock %}
+{% block pageclass %}about{% endblock %}
+
+{% block herocontent %}
+
+  Contact <strong>Us</strong>
+
+{% endblock %}
+
+{% block herobg %}
+    <video poster="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460305/circle5/about__poster.jpg" autoplay loop>
+        <source src="http://res.cloudinary.com/darkroast-digital/video/upload/v1509460329/circle5/contact__video.mp4" type="video/mp4">
+    </video>
+{% endblock %}
+
+{% block content %}
+
+<section class="about__intro">
+    <div class="about__intro-content" style="padding-left: 10%">
+        <h6>Contact Us</h6>
+        <ul style="display:flex">
+            <li style="margin-right:1rem">
+                <ul class="footer__contact">
+                        <li>
+                            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/footer__location.svg" draggable="false">
+                            <span>
+                                Circle 5 Tool and Mold <br>
+                                485 Silver Creek Industrial Drive <br>
+                                Techumseh, Ontario, Canada <br>
+                                N8N 4W2
+                            </span>
+                        </li>
+                        <li>
+                            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/footer__phone.svg" draggable="false">
+                            <span>
+                                519.727.6400 <br>
+                                519.727.6499
+                            </span>
+                        </li>
+                        <li>
+                            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/footer__mail.svg" draggable="false">
+                            <span>
+                                sales@circle5tool.com
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+            <li>
+                <ul class="footer__contact">
+                        <li>
+                            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/footer__location.svg" draggable="false">
+                            <span>
+                                Circle 5 Tool and Mold - China Office <br>
+                                Room 1101, Tianyue Building, No.110, Zhongxin Road <br>
+                                Shajing Town <br>
+                                Bao'an Disctrict, Shenzhen, China
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+        </ul>
+    </div>
+    <div class="about__intro-image"><img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/contact__bg.jpg" draggable="false"></div>
+</section>
+
+<!-- End about Intro -->
+
+</section>
+
+<section class="contact__form careers__contact">
+    <form action="{{ path_for('contact.form') }}" method="post" enctype="multipart/form-data" class="form">
+        <h3>Have A Question?</h3>
+        <p>We'd love to hear from you.  Get in touch with us below.</p>
+        <grid>
+            <column is4>
+                <input type="text" name="name" Placeholder="Name">
+            </column>
+            <column is4>
+                <input type="text" name="name" Placeholder="Name">
+            </column>
+            <column is4>
+                <input type="text" name="name" Placeholder="Name">
+            </column>
+            <column is12>
+                <textarea name="name" Placeholder="Message"></textarea>
+            </column>
+            <column is12><button class="submit">Submit</button></column>
+        </grid>
+    </form>
+</section>
+
+{% endblock %}

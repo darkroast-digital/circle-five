@@ -1,0 +1,7 @@
+{
+    "url": "circlefive.dev",
+    "watch": [
+        "dist/**/*.php",
+        "dist/**/*.twig"
+    ]
+}

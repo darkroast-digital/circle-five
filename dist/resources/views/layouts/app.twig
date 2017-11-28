@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Viewport Meta -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Styles -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{ css('app') }}">
+
+    <!-- Mobile Theme Colour -->
+
+    <meta name="theme-color" content="#042B45">
+
+    <!-- Title and Description -->
+
+    <title>Circle 5 Tool and Mold LP | {% block title %}{% endblock %}</title>
+    <meta name="description" content="Circle 5 Tool and Mold LP is a world class supplier of injection molded solutions serving the automotive and non-automotive industries.">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/fav.png">
+
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="Circle 5 Tool and Mold">
+    <meta property="og:description" content="Circle 5 Tool and Mold LP is a world class supplier of injection molded solutions serving the automotive and non-automotive industries.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.circle5tool.com/">
+    <meta property="og:site_name" content="Circle 5 Tool and Mold">
+    <meta property="og:image" content="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/ogimage.jpg">
+
+</head>
+
+<body>
+
+    <!--[if IE]>
+      <div class="browserupgrade"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div>
+   <![endif]-->
+
+    <div id="app">
+        <div class="menu__trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="{{ path_for('home') }}">Home</a></li>
+                <li><a href="{{ path_for('about') }}">Who We Are</a></li>
+                <li><a href="{{ path_for('services') }}">What We Do</a></li>
+                <li><a href="{{ path_for('careers') }}">How To Join</a></li>
+                <li><a href="{{ path_for('contact') }}">Where We Are</a></li>
+            </ul>
+        </div>
+
+        <nav class="nav">
+            <div class="nav__topbar">
+                <grid>
+                    <column is6><i class="material-icons">phone</i>+1.519.727.6400</column>
+                    <column is6><a href="">中文<i class="material-icons">keyboard_arrow_right</i></a></column>
+                </grid>
+            </div>
+            <!-- End Nav Topbar -->
+
+            <div class="nav__navbar">
+                <grid>
+                    <ul class="nav__left">
+                        <li><a href="{{ path_for('about') }}">Who We Are</a></li>
+                        <li><a href="{{ path_for('services') }}">What We Do</a></li>
+                    </ul>
+
+                    <a href="{{ path_for('home') }}" class="nav__brand"><img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509472631/circle5/logo.png" alt="Circle 5 Tool and Mold" draggable="false"></a>
+
+                    <ul class="nav__right">
+                        <li><a href="{{ path_for('careers') }}">How To Join</a></li>
+                        <li><a href="{{ path_for('contact') }}">Where We Are</a></li>
+                    </ul>
+                </grid>
+            </div>
+        </nav>
+
+        <!-- End Nav -->
+
+        <header class="hero {% block pageclass %}{% endblock %}">
+
+            <div class="hero__content">
+                <h1>
+                    {% block herocontent %}
+
+                    {% endblock %}
+                </h1>
+            </div>
+
+            {% block herobg %}
+
+            {% endblock %}
+
+        </header>
+
+        <!-- End Header -->
+
+        {% block content %}
+
+        {% endblock %}
+
+        <!-- End Content -->
+
+        <footer class="footer">
+            <div class="footer__content">
+                <grid>
+                    <column is3>
+                        <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/footer__logo.png" img="Circle 5 Tool and Mold" draggable="false" id="firstimg">
+                        <p id="firstp">Providing Solutions Through Teamwork and Technology</p>
+                    </column>
+                    <column is3>
+                        <h6>Navigation</h6>
+                        <ul>
+                            <li><a href="{{ path_for('home') }}">Home</a></li>
+                            <li><a href="{{ path_for('about') }}">Who We Are</a></li>
+                            <li><a href="{{ path_for('services') }}">What We Do</a></li>
+                            <li><a href="{{ path_for('careers') }}">How To Join</a></li>
+                            <li><a href="{{ path_for('contact') }}">Where We Are</a></li>
+                            <li><a href="" class="translate">中文</a></li>
+                        </ul>
+                    </column>
+                    <column is3>
+                        <h6>Contact</h6>
+                        <ul class="footer__contact">
+                            <li>
+                                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/footer__location.svg" draggable="false">
+                                <span>
+                                    Circle 5 Tool and Mold <br>
+                                    485 Silver Creek Industrial Drive <br>
+                                    Techumseh, Ontario, Canada <br>
+                                    N8N 4W2
+                                </span>
+                            </li>
+                            <li>
+                                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/footer__phone.svg" draggable="false">
+                                <span>
+                                    519.727.6400 <br>
+                                    519.727.6499
+                                </span>
+                            </li>
+                            <li>
+                                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/footer__mail.svg" draggable="false">
+                                <span>
+                                    sales@circle5tool.com
+                                </span>
+                            </li>
+                        </ul>
+                    </column>
+                    <column is3>
+                        <h6>Newsletter Signup</h6>
+                        <p>By subscribing to our mailing list you will get the latest news from <span>Circle 5.</span></p>
+                        <form action="{{ path_for('newsletter') }}" method="post" class="newsletter">
+                            <div class="field field__icon">
+                                <input class="field__input" type="email" name="email" id="email" required>
+                            </div>
+                        </form>
+                        <p>World Class Reputation</p>
+                        <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/footer__flags.png" draggable="false">
+                    </column>
+                </grid>
+            </div>
+            <section class="footer__copyright">
+                <grid>
+                &copy; {{ year() }} <a href="{{ path_for('home') }}"> <span>Circle 5</span> Tool &amp; Mold. </a> All Rights Reserved.
+                </grid>
+            </section>
+        </footer>
+
+        <!-- End Footer -->
+    </div>
+
+    <script src="{{ js('app') }}"></script>
+</body>
+
+<!-- See You Space Cowboy... -->
+
+</html>

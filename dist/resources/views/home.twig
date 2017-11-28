@@ -1,0 +1,70 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Home{% endblock %}
+
+{% block herocontent %}
+
+  Providing Solutions through
+  <span>Teamwork and Technology</span>
+
+{% endblock %}
+
+{% block herobg %}
+    <video poster="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/home__poster.jpg" autoplay loop>
+        <source src="http://res.cloudinary.com/darkroast-digital/video/upload/v1509460323/circle5/home__video.mp4" type="video/mp4">
+    </video>
+{% endblock %}
+
+{% block content %}
+
+<nav class="nav__circles">
+    <ul>
+        <li>
+            <a href="{{ path_for('about') }}">
+                <strong>Who</strong> We Are
+                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/about__circle.png" draggable="false">
+            </a>
+        </li>
+        <li>
+            <a href="{{ path_for('services') }}">
+                <strong>What</strong> We Do
+                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/services__circle.png" draggable="false">
+            </a>
+        </li>
+        <li>
+            <a href="{{ path_for('careers') }}">
+                <strong>How</strong> To Join
+                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/products__circle.png" draggable="false">
+            </a>
+        </li>
+        <li>
+            <a href="{{ path_for('contact') }}">
+                <strong>Where</strong> We Are
+                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/careers__circle.png" draggable="false">
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!-- End Nav Circles -->
+
+<section class="home__intro">
+    <div class="home__intro-image"><img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/home__intro-image.jpg" draggable="false"></div>
+    <div class="home__intro-content" style="padding-right: 10%">
+        <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460307/circle5/logo__full.png" alt="Circle 5 Tool and Mold Providing Solutions Through Teamwork and Technology" draggable="false">
+        <p>Circle 5 Tool and Mold LP (C5) is a world class supplier of injection molded solutions serving both the automotive and non-automotive industries. At Circle 5, we are committed to being on the cutting edge of technology and a leader in injection molding solutions for the 21st century.</p>
+    </div>
+</section>
+
+<!-- End Home Intro -->
+
+<section class="home__clients">
+    <ul>
+        <li><img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460623/circle5/clients/1.jpg" alt="General Motors" draggable="false"></li>
+        <li><img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460623/circle5/clients/2.jpg" alt="Cadillac" draggable="false"></li>
+        <li><img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460623/circle5/clients/3.jpg" alt="Mercedes-Benz" draggable="false"></li>
+        <li><img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460623/circle5/clients/4.jpg" alt="Honda" draggable="false"></li>
+        <li><img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460623/circle5/clients/5.jpg" alt="Ford" draggable="false"></li>
+    </ul>
+</section>
+
+{% endblock %}

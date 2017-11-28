@@ -1,0 +1,28 @@
+///* ========================================================================
+//   #CARD
+//   ======================================================================== */
+
+.c-card {
+    background: $c-white;
+    border: solid 1px $c-grey-lighter;
+    @include shadow(normal);
+    @include radius(medium);
+    overflow: hidden;
+
+    &__image {
+        height: 200px;
+        width: 100%;
+    }
+
+    &__content {
+        padding: 1rem;
+    }
+
+    &__footer {
+        display: flex;
+
+        &-item {
+            flex: 1 1 0;
+        }
+    }
+}

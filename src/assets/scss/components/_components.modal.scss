@@ -1,0 +1,63 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	height: 100%;
+	width: 100%;
+	background: rgba($c-black, .8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: false;
+
+	&.is--active {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+	}
+
+	&-content {
+		width: 60%;
+	}
+
+	   &-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        height: 40px;
+        width: 40px;
+        padding: 0;
+        border-radius: 50%;
+        background: transparent;
+        border: none;
+
+        &:hover {
+            background: rgba($c-black, .5);
+        }
+        
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            height: 3px;
+            width: 20px;
+            background: $c-white;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            height: 3px;
+            width: 20px;
+            background: $c-white;
+        }
+    }
+}

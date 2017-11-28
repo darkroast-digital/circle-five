@@ -1,0 +1,88 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}What We Do{% endblock %}
+{% block pageclass %}services{% endblock %}
+
+{% block herocontent %}
+
+  Our <strong>Services</strong>
+
+{% endblock %}
+
+{% block herobg %}
+    <video poster="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460306/circle5/services__poster.jpg" autoplay loop>
+        <source src="http://res.cloudinary.com/darkroast-digital/video/upload/v1509460325/circle5/services__video.mp4" type="video/mp4">
+    </video>
+{% endblock %}
+
+{% block content %}
+
+<section class="services__tabs">
+    <ul class="services__tabs-nav">
+        <li class="js-tab__trigger">Program <br>Management<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461687/circle5/tabs/1/circle.png" draggable="false"></li>
+        <li class="js-tab__trigger">Design +<br> Engineering<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461975/circle5/tabs/2/circle.png" draggable="false"></li>
+        <li class="js-tab__trigger">CNC <br>Machining<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461989/circle5/tabs/3/circle.png" draggable="false"></li>
+        <li class="js-tab__trigger">EDM <br>Machining<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509462059/circle5/tabs/4/circle.png" draggable="false"></li>
+        <li class="js-tab__trigger">Mold <br>Making<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509462132/circle5/tabs/5/circle.png" draggable="false"></li>
+        <li class="js-tab__trigger">Global Tool <br>Integration<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509462183/circle5/tabs/6/circle.png" draggable="false"></li>
+    </ul>
+    <section class="services__tabs-content" style="padding-right: 5%">
+        <div id="tab1" class="services__tabs-tab js-tab">
+            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461687/circle5/tabs/1/bg.jpg" draggable="false">
+            <div style="margin-top:3rem">
+                <p>At C5, we are all passionate and focused on one thing: building the smartest, most robust injection mold solutions for our customers. Some of the world's leading automotive brands depend on us for their mission critical components of which our molds produce.  These molds produce parts such as:</p>
+                <ul>
+                    <li>- Instrument Panel Plastics</li>
+                    <li>- Door Panels</li>
+                    <li>- Centre Consoles</li>
+                    <li>- Interior Hard Trim </li>
+                    <li>- Seat Plastics</li>
+                </ul>
+                <h6>How do we do it?</h6>
+                <p>We do it by:</p>
+                <ul>
+                    <li>a) Drawing upon our years of knowledge, experience and insight</li>
+                    <li>b) Intelligent Design Feasibility and Analysis</li>
+                    <li>c) World Class Program Management</li>
+                    <li>d) Cutting Edge Metal Removal Technologies</li>
+                    <li>e) TEAMWORK</li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Tab -->
+    </section>
+</section>
+
+<!-- End Services Tabs -->
+
+<section class="services__quality">
+    <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509460308/circle5/guarantee.png" alt="Satisfaction Guaranteed">
+    <div>
+        <h6>Our Commitment to Quality</h6>
+        <p>At Circle 5 Tool & Mold, we guarantee 100% customer satisfaction, providing our customers with top quality services and products, from providing a quote, all the way through to the final product. There is no substitute for hard work and we embody that philosophy in all that we do. We are always looking for new, creative, and innovative ways to work more efficiently. Circle 5 takes pride in our ability to identify and implement solutions that are responsible to our clients, our stakeholders, the environment, and our communities. Our success, and that of our clients, is rooted in our ability to work together as a single unit and driving force. At Circle 5, we are committed to quality.
+        </p>
+    </div>
+</section>
+
+<!-- End Services Quality -->
+
+<section class="services__products">
+    <h4>Quality Services Yields Quality Products.</h4>
+    <grid>
+    <column is12>
+        <div class="equipment__gallery">
+            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461436/circle5/parts/gallery/1.jpg" draggable="false">
+            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461436/circle5/parts/gallery/2.jpg" draggable="false">
+            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461436/circle5/parts/gallery/3.jpg" draggable="false">
+            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461436/circle5/parts/gallery/4.jpg" draggable="false">
+            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461436/circle5/parts/gallery/5.jpg" draggable="false">
+            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461436/circle5/parts/gallery/6.jpg" draggable="false">
+            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461436/circle5/parts/gallery/7.jpg" draggable="false">
+            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461436/circle5/parts/gallery/8.jpg" draggable="false">
+            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461436/circle5/parts/gallery/9.jpg" draggable="false">
+            <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509461436/circle5/parts/gallery/10.jpg" draggable="false">
+        </div>
+    </column>
+    </grid>
+</section>
+
+{% endblock %}
