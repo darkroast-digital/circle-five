@@ -296,7 +296,7 @@
         width: 100%;
         position: absolute;
         z-index: 10;
-        background-image: url('../../assets/img/header__circle.png');
+        background-image: url('http://res.cloudinary.com/darkroast-digital/image/upload/v1509460309/circle5/header__circle.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
@@ -1104,7 +1104,7 @@
 
 .careers__intro {
     padding: 3rem 0;
-    background: url('../../assets/img/careers__intro.jpg');
+    background: url('http://res.cloudinary.com/darkroast-digital/image/upload/v1509460305/circle5/careers__intro.jpg');
     background-repeat: no-repeat;
     border-bottom-width: 10px;
     position: relative;
@@ -1192,7 +1192,7 @@
 }
 
 .careers__contact {
-    background-image: url('../../assets/img/careers__contact.jpg');
+    background-image: url('http://res.cloudinary.com/darkroast-digital/image/upload/v1509460305/circle5/careers__contact.jpg');
     @include cover();
     padding: 3rem 0;
 
