@@ -128,3 +128,13 @@ vid.oncanplaythrough = function() {
     $this.fadeIn('fast');
   vid.oncanplay = vid.play();
 }
+
+
+
+
+// #LAODER
+// =========================================================================
+
+$(window).on('load', function(){
+    $('.loader__container').addClass('is--loaded');
+});
