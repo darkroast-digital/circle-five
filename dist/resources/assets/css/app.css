@@ -1403,7 +1403,7 @@ button {
     width: 100%;
     position: absolute;
     z-index: 10;
-    background-image: url("http://res.cloudinary.com/darkroast-digital/image/upload/v1509460309/circle5/header__circle.png");
+    background-image: url("https://res.cloudinary.com/darkroast-digital/image/upload/v1509460309/circle5/header__circle.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom; }
@@ -2135,7 +2135,7 @@ button {
 */
 .careers__intro {
   padding: 3rem 0;
-  background: url("http://res.cloudinary.com/darkroast-digital/image/upload/v1509460305/circle5/careers__intro.jpg");
+  background: url("https://res.cloudinary.com/darkroast-digital/image/upload/v1509460305/circle5/careers__intro.jpg");
   background-repeat: no-repeat;
   border-bottom-width: 10px;
   position: relative;
@@ -2227,7 +2227,7 @@ button {
           background: #d9ecf4; }
 
 .careers__contact {
-  background-image: url("http://res.cloudinary.com/darkroast-digital/image/upload/v1509460305/circle5/careers__contact.jpg");
+  background-image: url("https://res.cloudinary.com/darkroast-digital/image/upload/v1509460305/circle5/careers__contact.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
